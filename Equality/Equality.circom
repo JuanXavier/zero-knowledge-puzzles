@@ -5,8 +5,12 @@ pragma circom 2.1.4;
 
 template Equality() {
    // Your Code Here..
+   signal input a[3];
+   signal output c;
 
-   
+   // Constraints 
+   signal equal <-- a[0]==a[1]&&a[1]==a[2];
+   c <== equal;
 }
 
 component main = Equality();
