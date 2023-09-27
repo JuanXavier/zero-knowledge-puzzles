@@ -8,7 +8,8 @@
 		"addition": "yarn test test/Add.js",
 		"equality": "yarn test test/Equality.js",
 		"notequal": "yarn test test/NotEqual.js",
-		"poseidon": "yarn test test/Poseidon.js"
+		"poseidon": "yarn test test/Poseidon.js",
+		"loop": "yarn test test/ForLoop.js"
 	},
 	"author": "Rareskills",
 	"license": "GNU GENERAL PUBLIC LICENSE",
