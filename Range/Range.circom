@@ -7,10 +7,13 @@ pragma circom 2.1.4;
 // Declare 3 input signals `a`, `lowerbound` and `upperbound`.
 // If 'a' is within the range, output 1 , else output 0 using 'out'
 
-
 template Range() {
-    // your code here
-   
+    signal input a, lowerbound, upperbound;
+    signal output c;
+
+    // Constraints 
+    signal withinRange <-- a >= lowerbound && a <= upperbound;
+    c <== withinRange;
 }
 
 component main  = Range();
