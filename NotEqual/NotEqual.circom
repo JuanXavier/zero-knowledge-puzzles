@@ -13,8 +13,8 @@ template NotEqual() {
    signal output c;
 
    // Constraints 
-   var notE = a[0] != a[1] ? 1 : 0;
-   c <-- notE;
+   var notEqual = a[0] != a[1] ? 1 : 0;
+   c <-- notEqual;
 }
 
 component main = NotEqual();
