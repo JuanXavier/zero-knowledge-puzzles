@@ -11,7 +11,12 @@
 		"poseidon": "yarn test test/Poseidon.js",
 		"loop": "yarn test test/ForLoop.js",
 		"power": "yarn test test/Pow.js",
-		"range": "yarn test test/Range.js"
+		"range": "yarn test test/Range.js",
+		"salt": "yarn test test/Salt.js",
+		"quadratic": "yarn test test/QuadraticEquation.js",
+		"compile": "yarn test test/Compile.js",
+		"sudoku": "yarn test test/Sudoku.js",
+		"sukijo": "yarn test test/Sukijo.js"
 	},
 	"author": "Rareskills",
 	"license": "GNU GENERAL PUBLIC LICENSE",
