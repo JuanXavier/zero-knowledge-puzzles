@@ -51,6 +51,24 @@ Then run the following command
 yarn test ./test/<TestName>.js
 ```
 
+## Notes
+
+I had to do some personal changes on the `script.sh` file to make it all work, since I'm running on Windows 10.
+
+I used gitBash to run the script like so `. script.sh`.
+I had to install snarkjs globally as well.
+
+```
+npm i -g snarkjs@latest
+```
+
+Make sure to have the wget package installed (https://www.youtube.com/watch?v=cvvcG1a7dOM&t=153s)
+
+And I had to take out the `verifier` contract located in the `Sujiko` folder and move it to a newly created contracts folder in order to compile with hardhat and update the artifacts.
+I changed the contract name, the file name, the sh file and the `Compile.js` to `Groth16Verifier.sol` to be more specific.
+
+Then I compiled the contracts with `npx hardhat compile` to create the artifacts and ran the tests with `yarn run compile`
+
 ## Suggested Order for the Puzzles.
 
 -   [Addition](https://github.com/RareSkills/zero-knowledge-puzzles/tree/main/Addition)

@@ -4,7 +4,7 @@ echo "Compiling Mul.circom..."
 
 circom Mul.circom --r1cs --wasm --sym -o .
 
-PTAU = 12
+PTAU=12
 
 if [ -f ./ptau/powersOfTau28_hez_final_${PTAU}.ptau ]; then
     echo "----- powersOfTau28_hez_final_${PTAU}.ptau already exists -----"
@@ -50,7 +50,7 @@ snarkjs groth16 prove Mul_0001.zkey witness.wtns proof.json public.json
 snarkjs groth16 verify verification_key.json public.json proof.json
 
 # Generate a Solidity verifier that allows verifying proofs on Ethereum blockchain
-snarkjs zkey export solidityverifier Mul_0001.zkey ../contracts/verifier.sol
+snarkjs zkey export solidityverifier Mul_0001.zkey ./Groth16Verifier.sol
 
 # Generate and print parameters of call
 snarkjs generatecall | tee parameters.txt
