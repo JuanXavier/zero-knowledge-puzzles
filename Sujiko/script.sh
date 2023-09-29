@@ -3,7 +3,7 @@ echo "Compiling Sujiko.circom..."
 
 circom Sujiko.circom --r1cs --wasm --sym -o .
 
-PTAU = 12
+PTAU=12
 
 if [ -f ./ptau/powersOfTau28_hez_final_${PTAU}.ptau ]; then
     echo "----- powersOfTau28_hez_final_${PTAU}.ptau already exists -----"

@@ -53,10 +53,9 @@ yarn test ./test/<TestName>.js
 
 ## Notes
 
-I had to do some personal changes on the `script.sh` file to make it all work, since I'm running on Windows 10.
+For the `Compile` level, I had to do some personal changes on the `script.sh` file to make it all work, since I'm running on Windows 10.
 
-I used gitBash to run the script like so `. script.sh`.
-I had to install snarkjs globally as well.
+I used gitBash to run the script like so `. script.sh` and I had to install snarkjs globally as well.
 
 ```
 npm i -g snarkjs@latest
